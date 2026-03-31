@@ -109,6 +109,17 @@ English:
 ![Prediction 1](Predicted_1.png)
 ![Prediction 2](predicted_2.png)
 
+​🔮 Advanced Prediction & Probability Analysis | التوقع المتقدم وتحليل الاحتمالات
+​
+English:
+
+​Beyond simple classification, this section utilizes the Softmax output to visualize the model's confidence levels for each prediction. By displaying the top 3 class probabilities alongside each image, we can identify cases where the model is highly certain or when it struggles to differentiate between visually similar classes like "Street" and "Buildings".
+
+​العربية
+
+​أبعد من مجرد التصنيف البسيط، يستخدم هذا القسم مخرجات دالة Softmax لعرض مستويات ثقة الموديل في كل توقع بشكل مرئي. من خلال عرض احتمالات أفضل 3 فئات بجانب كل صورة، يمكننا تحديد الحالات التي يكون فيها الموديل واثقاً تماماً أو الحالات التي يواجه فيها صعوبة في التمييز بين الفئات المتشابهة بصرياً مثل "Street" و "Buildings".
+
+
 ​Prepared by: Mohamed Belal
 AI & Data Science Specialist
 
