@@ -142,4 +142,4 @@ English:
 
 👤 Author | صاحب المشروع
 ​Mohamed Belal
-​AI & Data Science Specialist.
+​AI & Data Science Specialist
