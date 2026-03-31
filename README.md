@@ -62,6 +62,18 @@ We implemented a Deep Learning solution using Transfer Learning with the ResNet5
 ### 3. Confusion Matrix
 ![Confusion Matrix](Confision_Matrix.png)
 
+​📉 Model Evaluation | تقييم أداء النموذج
+​
+English:
+
+​The Classification Report shows an overall accuracy of 91%, with high precision and recall across most classes, especially the "Forest" category. The Confusion Matrix further confirms this strong performance, as the majority of predictions lie on the main diagonal. While there is minor confusion between "Glacier" and "Mountain" due to visual similarities, the model effectively distinguishes between most distinct environments.
+
+​العربية
+
+​يوضح تقرير التصنيف (Classification Report) أن الدقة الإجمالية للموديل بلغت 91%، مع قيم مرتفعة لـ Precision و Recall في معظم الفئات، وخاصة فئة "Forest". وتؤكد مصفوفة الارتباك (Confusion Matrix) هذا الأداء القوي، حيث تتركز معظم التوقعات الصحيحة على القطر الرئيسي للمصفوفة. وبالرغم من وجود تداخل بسيط بين فئتي "Glacier" و "Mountain" نظراً للتشابه البصري بينهما، إلا أن الموديل أظهر كفاءة عالية في التمييز بين البيئات المختلفة
+
+
+
 ### 4. Model Interpretability (Grad-CAM)
 ![Grad-CAM 1](Grad_CAM_1.png)
 ![Grad-CAM 2](Grad_CAM_2.png)
