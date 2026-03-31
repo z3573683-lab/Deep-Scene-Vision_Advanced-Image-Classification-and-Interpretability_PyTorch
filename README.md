@@ -1,54 +1,61 @@
 # Deep-Scene-Vision_Advanced-Image-Classification-and-Interpretability_PyTorch
 Advanced Image Classification and Interpretability using PyTorch, Featuring custom CNN architectures and Grad-CAM Visualization.
 
-​🌍 Intel Image Classification: From Pixels to Predictions with PyTorch
-​💡 Project Overview: Understanding Natural Scenes through Deep Learning
+​​📸 Intel Image Classification| 
+تصنيف صور المشاهد الطبيعية
 
-​📝 Problem Statement | 
-تعريف المشكلة
+​📝 Project Overview | 
+نبذة عن المشروع
+
+​English: This project implements an advanced Computer Vision pipeline using PyTorch to classify natural scenes. By leveraging Transfer Learning with a pre-trained ResNet50 backbone, the model accurately identifies 6 categories: Buildings, Forest, Glacier, Mountain, Sea, and Street.
+
+العربية:
+
+يقدم هذا المشروع مساراً متقدماً في الرؤية الحاسوبية باستخدام مكتبة PyTorch لتصنيف المشاهد الطبيعية. بالاعتماد على تعلم النقل (Transfer Learning) ونموذج ResNet50 المدرب مسبقاً، يستطيع النموذج تصنيف 6 فئات بدقة: المباني، الغابات، الأنهار الجليدية، الجبال، البحار، والشوارع
+.
+​🛠️ Technical Stack | التقنيات المستخدمة
+​Framework: PyTorch (Deep Learning Core).
+​Architecture: ResNet50 (Pre-trained on ImageNet).
+​Explainability: Grad-CAM (Gradient-weighted Class Activation Mapping).
+​Optimization: Adam Optimizer & StepLR Scheduler.
+​Data Engineering: Custom Dataset wrappers & DataLoaders.
+
+​🚀 Key Implementation Steps | خطوات التنفيذ الأساسية
+​
+1. Data Augmentation | تحسين وتوسيع البيانات
+​
+English:
+Applied techniques like Random Rotation, Color Jitter, and Horizontal Flips to enhance model generalization and prevent overfitting.
+العربية:
+ تم تطبيق تقنيات مثل الدوران العشوائي، تعديل الإضاءة، والقلب الأفقي لتحسين قدرة النموذج على التعميم ومنع الإفراط في التخصيص (Overfitting)
+
+​2. Model Fine-Tuning | ضبط النموذج
+​
+English:
+Froze the convolutional base of ResNet50 and added a custom classification head consisting of Linear layers, ReLU activation, and Dropout (0.4).
+العربية:
+قمنا بتجميد طبقات ResNet50 الأساسية وإضافة رأس تصنيف مخصص يحتوي على طبقات Linear مع تفعيل ReLU وطبقة Dropout بنسبة 0.4 لضمان استقرار التعلم.
+
+​3. XAI with Grad-CAM | تفسير النموذج (الذكاء الاصطناعي القابل للتفسير)
 
 ​English:
-
-The challenge lies in enabling a computer to automatically and accurately distinguish between diverse natural landscapes. In a world of massive visual data, manually labeling images of mountains, forests, or streets is impossible. We need a robust system that can "see" and "understand" the defining features of these environments despite variations in lighting, angles, and weather.
-
-​العربية
-
-تكمن المشكلة في تمكين الكمبيوتر من التمييز التلقائي والدقيق بين المناظر الطبيعية المتنوعة. في عالم مليء بالبيانات البصرية الضخمة، يعد التصنيف اليدوي لصور الجبال أو الغابات أو الشوارع أمراً مستحيلاً. نحن بحاجة إلى نظام قوي يمكنه "رؤية" وفهم الميزات المحددة لهذه البيئات بالرغم من اختلاف الإضاءة والزوايا والظروف الجوية
-
-​🛠️ The Solution | 
-الحل البرمجي
+Implemented Grad-CAM to visualize "Heatmaps" on images. This explains the model's decision by highlighting the specific features (like trees or peaks) it used for prediction.
+العربية:
+تم دمج تقنية Grad-CAM لاستخراج خرائط حرارية توضح "مناطق الاهتمام". هذا يفسر قرار النموذج من خلال تسليط الضوء على العناصر (مثل الأشجار أو قمم الجبال) التي استند إليها في التوقع.
+​
+📊 Performance Evaluation | تقييم الأداء
 
 ​English:
+The model's performance was rigorously tested using:
+​Confusion Matrix: To identify misclassifications between similar classes.
+​Classification Report: Measuring Precision, Recall, and F1-Score.
+​Learning Curves: Plotting Loss and Accuracy for both Training and Validation.
 
-We implemented a Deep Learning solution using Transfer Learning with the ResNet50 architecture. By using a model pre-trained on millions of images, we leverage existing knowledge to achieve high accuracy on our specific dataset. We also integrated Explainable AI (Grad-CAM) to ensure the model makes decisions based on the right visual cues.
-
-
-​العربية
-
-قمنا بتنفيذ حل يعتمد على التعلم العميق (Deep Learning) باستخدام تقنية تعلم النقل (Transfer Learning) وهيكلية ResNet50. من خلال استخدام نموذج مدرب مسبقاً على ملايين الصور، استفدنا من المعرفة السابقة لتحقيق دقة عالية. كما قمنا بدمج الذكاء الاصطناعي القابل للتفسير (Grad-CAM) لضمان أن النموذج يتخذ قراراته بناءً على عناصر بصرية صحيحة
-
-​🛤️ Roadmap: What We Will Do | 
-خارطة الطريق: ماذا سنفعل؟
-1.​Data Engineering: Load and split the dataset, then apply Data Augmentation (Rotation, Flips, Color Jitter).
-​هندسة البيانات: تحميل وتقسيم البيانات وتطبيق تقنيات تحسين الصور (الدوران، القلب، تعديل الألوان)
-
-​Model Building: Initialize ResNet50, freeze its backbone, and design a custom Classification Head with Dropout.
-​بناء النموذج: استدعاء ResNet50، تجميد الطبقات الأساسية، وتصميم رأس تصنيف مخصص مع تقنية الـ Dropout
-
-​Training Setup: Define CrossEntropy Loss and Adam Optimizer with a Learning Rate Scheduler.
-​إعداد التدريب: تحديد دالة الفقد والمحسن مع إضافة مجدول لسرعة التعلم لضمان استقرار الأداء
-
-​Execution: Run the Training Loop for 10 epochs, monitoring both training and validation performance.
-​التنفيذ: تشغيل حلقة التدريب لـ 10 دورات مع مراقبة الأداء في التدريب والتحقق
-
-​Visualization: Plot Loss & Accuracy curves to diagnose the learning process.
-​التحليل البصري: رسم منحنيات الخطأ والدقة لتشخيص عملية التعلم
-
-​Final Evaluation: Generate a Confusion Matrix and Classification Report for detailed metrics.
-​التقييم النهائي: استخراج مصفوفة الارتباك وتقرير التصنيف للحصول على أرقام دقيقة
-
-​XAI (Grad-CAM): Visualize where the model "looks" to confirm its intelligence.
-​تفسير النموذج: استخدام تقنية Grad-CAM لرؤية المناطق التي يركز عليها النموذج لضمان ذكائه
+​العربية:
+تم اختبار أداء النموذج بدقة من خلال
+​مصفوفة الارتباك (Confusion Matrix): لتحديد التداخل بين الفئات المتشابهة.
+​تقرير التصنيف: لقياس الدقة (Precision) والاستدعاء (Recall) لكل فئة.
+​منحنيات التعلم: رسم بياني لمعدل الخطأ والدقة خلال مراحل التدريب والتحقق
 
 ​📊 Model Performance & Visual Results
 ​To demonstrate the model's reliability and transparency, we provide the following metrics and interpretability visualizations:
@@ -107,9 +114,8 @@ English:
 
 ### 5. Prediction Samples
 ![Prediction 1](Predicted_1.png)
-![Prediction 2](predicted_2.png)
 
-​🔮 Advanced Prediction & Probability Analysis | التوقع المتقدم وتحليل الاحتمالات
+🔮 Advanced Prediction & Probability Analysis | التوقع المتقدم وتحليل الاحتمالات
 ​
 English:
 
@@ -117,9 +123,23 @@ English:
 
 ​العربية
 
-​أبعد من مجرد التصنيف البسيط، يستخدم هذا القسم مخرجات دالة Softmax لعرض مستويات ثقة الموديل في كل توقع بشكل مرئي. من خلال عرض احتمالات أفضل 3 فئات بجانب كل صورة، يمكننا تحديد الحالات التي يكون فيها الموديل واثقاً تماماً أو الحالات التي يواجه فيها صعوبة في التمييز بين الفئات المتشابهة بصرياً مثل "Street" و "Buildings".
+​أبعد من مجرد التصنيف البسيط، يستخدم هذا القسم مخرجات دالة Softmax لعرض مستويات ثقة الموديل في كل توقع بشكل مرئي. من خلال عرض احتمالات أفضل 3 فئات بجانب كل صورة، يمكننا تحديد الحالات التي يكون فيها الموديل واثقاً تماماً أو الحالات التي يواجه فيها صعوبة في التمييز بين الفئات المتشابهة بصرياً مثل "Street" و "Buildings"
 
 
-​Prepared by: Mohamed Belal
-AI & Data Science Specialist
+![Prediction 2](predicted_2.png)
 
+​👁️ Visualizing Model Decisions | تفسير قرارات النموذج
+​
+English:
+
+​This final stage combines Grad-CAM heatmaps with Top-3 Probability bar charts to provide a comprehensive view of the model's reasoning. The heatmap highlights the specific pixels that triggered the classification, while the probability chart shows how confident the model is compared to other potential classes. For instance, it can achieve a confidence level as high as 99.89% for clear-cut classes like "Sea".
+
+​العربية
+
+​تدمج هذه المرحلة النهائية بين الخرائط الحرارية لتقنية Grad-CAM والرسوم البيانية لـ أفضل 3 احتمالات لتقديم رؤية شاملة لكيفية اتخاذ الموديل لقراره. توضح الخريطة الحرارية البكسلات المحددة التي أدت لعملية التصنيف، بينما يوضح مخطط الاحتمالات مدى ثقة الموديل مقارنة بالفئات الأخرى المحتملة. على سبيل المثال، يمكن للموديل أن يصل لمستوى ثقة مرتفع جداً يصل إلى 99.89% في الفئات الواضحة مثل "البحر"
+
+
+
+👤 Author | صاحب المشروع
+​Mohamed Belal
+​AI & Data Science Specialist.
