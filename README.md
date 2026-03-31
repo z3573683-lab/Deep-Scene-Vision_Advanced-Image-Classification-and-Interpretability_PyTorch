@@ -6,6 +6,7 @@ Advanced Image Classification and Interpretability using PyTorch, Featuring cust
 
 ​📝 Problem Statement | 
 تعريف المشكلة
+
 ​English:
 
 The challenge lies in enabling a computer to automatically and accurately distinguish between diverse natural landscapes. In a world of massive visual data, manually labeling images of mountains, forests, or streets is impossible. We need a robust system that can "see" and "understand" the defining features of these environments despite variations in lighting, angles, and weather.
@@ -16,9 +17,11 @@ The challenge lies in enabling a computer to automatically and accurately distin
 
 ​🛠️ The Solution | 
 الحل البرمجي
+
 ​English:
 
 We implemented a Deep Learning solution using Transfer Learning with the ResNet50 architecture. By using a model pre-trained on millions of images, we leverage existing knowledge to achieve high accuracy on our specific dataset. We also integrated Explainable AI (Grad-CAM) to ensure the model makes decisions based on the right visual cues.
+
 
 ​العربية
 
