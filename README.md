@@ -67,6 +67,21 @@ We implemented a Deep Learning solution using Transfer Learning with the ResNet5
 ![Grad-CAM 2](Grad_CAM_2.png)
 ![Grad-CAM 3](Grad_CAM_3.png)
 
+​🔍 Model Interpretability with Grad-CAM
+​To ensure the model is making decisions based on relevant features rather than background noise, I implemented Grad-CAM (Gradient-weighted Class Activation Mapping).
+
+​How it Works:
+
+​Feature Extraction: It uses the gradients of the target class (e.g., Mountain, Sea, Forest) flowing into the last convolutional layer (layer4 or layer3 of ResNet50).
+​Heatmap Generation: We calculate the importance of each neuron to the final prediction and produce a coarse localization map.
+​Visualization: The heatmap is superimposed on the original image using Bilinear Interpolation for a smooth, professional finish.
+
+​💡 تفسير النتائج بالعربية
+
+​استخدمت تقنية Grad-CAM لزيادة شفافية الموديل وفهم كيفية اتخاذ القرار:
+​المناطق الدافئة (الأحمر/الأصفر): تمثل الأجزاء التي ركز عليها الموديل لتصنيف الصورة (مثل قمم الجبال أو أفق البحر).
+​الدقة: باستخدام bilinear interpolation وتجربة طبقات مختلفة، تمكنت من الحصول على خريطة حرارية دقيقة توضح كفاءة التدريب.
+
 ### 5. Prediction Samples
 ![Prediction 1](Predicted_1.png)
 ![Prediction 2](predicted_2.png)
