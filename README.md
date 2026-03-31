@@ -50,6 +50,27 @@ We implemented a Deep Learning solution using Transfer Learning with the ResNet5
 ​XAI (Grad-CAM): Visualize where the model "looks" to confirm its intelligence.
 ​تفسير النموذج: استخدام تقنية Grad-CAM لرؤية المناطق التي يركز عليها النموذج لضمان ذكائه
 
+​📊 Model Performance & Visual Results
+​To demonstrate the model's reliability and transparency, we provide the following metrics and interpretability visualizations:
+
+### 1. Training Metrics (Accuracy & Loss)
+![Accuracy and Loss](Accuracy_and_Loss.png)
+
+### 2. Classification Report
+![Classification Report](Classification_Report.png)
+
+### 3. Confusion Matrix
+![Confusion Matrix](Confision_Matrix.png)
+
+### 4. Model Interpretability (Grad-CAM)
+![Grad-CAM 1](Grad_CAM_1.png)
+![Grad-CAM 2](Grad_CAM_2.png)
+![Grad-CAM 3](Grad_CAM_3.png)
+
+### 5. Prediction Samples
+![Prediction 1](Predicted_1.png)
+![Prediction 2](predicted_2.png)
+
 ​Prepared by: Mohamed Belal
 AI & Data Science Specialist
 
