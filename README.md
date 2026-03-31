@@ -56,6 +56,17 @@ We implemented a Deep Learning solution using Transfer Learning with the ResNet5
 ### 1. Training Metrics (Accuracy & Loss)
 ![Accuracy and Loss](Accuracy_and_Loss.png)
 
+​📊 Training Performance Analysis | تحليل أداء التدريب
+​
+English:
+
+​The Loss Curves demonstrate a consistent downward trend, confirming that the model effectively minimized error and converged smoothly. The Accuracy Curves show that the model reached a high performance level, with the validation accuracy closely following the training progress, which indicates a well-generalized model without overfitting.
+
+​العربية
+
+​توضح منحنيات الخسارة (Loss) انخفاضاً مستمراً، مما يؤكد قدرة الموديل على تقليل نسبة الخطأ والوصول لحالة الاستقرار (Convergence). كما تظهر منحنيات الدقة (Accuracy) وصول الموديل لمستوى أداء عالٍ، مع تقارب دقة التحقق (Validation) من دقة التدريب، مما يدل على قدرة الموديل على التعميم بشكل ممتاز دون الوقوع في مشكلة الـ Overfitting.
+
+
 ### 2. Classification Report
 ![Classification Report](Classification_Report.png)
 
