@@ -140,6 +140,8 @@ English:
 
 
 
-👤 Author | صاحب المشروع
-​Mohamed Belal
-​AI & Data Science Specialist
+## 👤 Author
+**[MOHAMED BELAL]** *Deep Learning & Data Engineering Enthusiast*
+MY PHONE [01018689118]
+
+
