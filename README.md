@@ -4,7 +4,7 @@ Advanced Image Classification and Interpretability using PyTorch, Featuring cust
 ​​📸 Intel Image Classification| 
 تصنيف صور المشاهد الطبيعية
 
-​📝 Project Overview | 
+​📝 Project Overview |
 نبذة عن المشروع
 
 ​English: This project implements an advanced Computer Vision pipeline using PyTorch to classify natural scenes. By leveraging Transfer Learning with a pre-trained ResNet50 backbone, the model accurately identifies 6 categories: Buildings, Forest, Glacier, Mountain, Sea, and Street.
